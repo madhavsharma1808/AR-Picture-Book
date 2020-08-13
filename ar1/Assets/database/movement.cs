@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
+    public float x;
+    public float y;
+    public float z;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,6 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.Translate(new Vector3(0.5f, 0, 0) * Time.deltaTime);
+        this.transform.Translate(new Vector3(x, y, z) * Time.deltaTime);
     }
 }
